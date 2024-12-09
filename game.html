@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lato:wght@300;400;700;900&family=Roboto+Slab:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="gamestyle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="logo">
+            <img src="assets/index/pngwing.com.png" style="height: 2.65rem; width: 2.65rem; margin-left: 3rem;">
+            <div class="logo-text">Simon Says</div>
+        </div>
+        <ul>
+            <li><a class="home" href="index.html">Home</a></li>
+            <li><a class="game" href="game.html">Game</a></li>
+            <li><a class="about-us" href="aboutus.html">About Us</a></li>
+            <li><a class="contact-us" href="contact.html">Contact Us</a></li>
+            <li><a href="login.html"><button type="button" class="btn btn-outline-light" style="width: 5rem;">Login</button></a></li>
+            <li><a href="signup.html"><button type="button" class="btn btn-outline-light" style="width: 5rem;">SignUp</button></a></li>
+        </ul>
+    </nav>
+
+    <div class="game-header">
+            <!-- Left Sidebar -->
+            <div class="sidebar left"></div>
+        
+            <!-- Right Sidebar -->
+            <div class="sidebar right"></div>
+    
+        <center>
+            <div class="game-header-title">Start the SIMON SAYS!</div>
+        </center>
+        <center>
+            <div class="level h2">Level 0</div>
+        </center>
+        
+        <!-- Add High Score element at the top-right -->
+        <div class="high-score-container">
+            <center> <span id="high-score">High Score is 0</span></center>
+        </div>
+        
+        <div class="circle-container">
+            <div class="btns green" id="green"></div>
+            <div class="btns red" id="red"></div>
+            <div class="btns yellow" id="yellow"></div>
+            <div class="btns blue" id="blue"></div>
+    
+            <div class="center-circle">
+                <span id="center">GO</span>
+            </div>
+        </div>
+        <div class="game-btuns">
+            <center>
+                <a href="#" id="start-button" class="btn btn-success"
+                    style="width: 12rem; height: 4rem; font-size: 2rem; display:flex; align-items: center; justify-content: center;">
+                    Start Now
+                </a>
+            </center>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="welcome"> 
+            <h2 style="margin-top: 1.75rem;">How to Play:</h2>
+            <p style="font-family: 'Roboto Slab', serif; margin-bottom: 0;"><i class="fa-solid fa-star-of-life" style="font-size: 0.7rem; color: white;"></i> Observe: Watch the sequence of colors as they light up.</p>
+            <p style="font-family: 'Roboto Slab', serif; margin-bottom: 0;"><i class="fa-solid fa-star-of-life" style="font-size: 0.7rem; color: white;"></i> Repeat: Click the colors in the exact same order.</p>
+            <p style="font-family: 'Roboto Slab', serif;"><i class="fa-solid fa-star-of-life" style="font-size: 0.7rem; color: white;"></i> Challenge Yourself: The sequence grows longer with each successful round. How far can you go?</p>
+        </div>
+    
+        <div class="about">
+            <h2>Game Features:</h2>
+            <p style="font-family: 'Roboto Slab', serif; margin-bottom: 0;"><i class="fa-solid fa-circle-dot" style="font-size: 0.7rem; color: white;"></i> Interactive Gameplay: Engage your mind and sharpen your memory skills.</p>
+            <p style="font-family: 'Roboto Slab', serif; margin-bottom: 0;"><i class="fa-solid fa-circle-dot" style="font-size: 0.7rem; color: white;"></i> Responsive Design: Play on any device, be it desktop or mobile.</p>
+            <p style="font-family: 'Roboto Slab', serif;"><i class="fa-solid fa-circle-dot" style="font-size: 0.7rem; color: white;"></i> Bright and Colorful: Enjoy a vibrant and dynamic gaming experience.</p>
+        </div>
+    
+        <div class="welcome"> 
+            <h2>Tips for Success:</h2>
+            <p style="font-family: 'Roboto Slab', serif; margin-bottom: 0;"><i class="fa-solid fa-star-of-life" style="font-size: 0.7rem; color: white;"></i> Stay focused and concentrate on the sequence.</p>
+            <p style="font-family: 'Roboto Slab', serif; margin-bottom: 0;"><i class="fa-solid fa-star-of-life" style="font-size: 0.7rem; color: white;"></i> Play in a quiet environment for better concentration.</p>
+            <p style="font-family: 'Roboto Slab', serif;"><i class="fa-solid fa-star-of-life" style="font-size: 0.7rem; color: white;"></i> Challenge friends to beat your high score!</p>
+        </div>
+    </div>
+    
+    <footer style="background-color: #5a6568;">
+        <div class="footer-container">
+          <!-- Left Section -->
+          <div class="footer-head">
+            <div class="footer-title">Simon Says</div>
+            <div class="footer-icons">
+              <i class="fa-brands fa-instagram icons"></i>
+              <i class="fa-brands fa-youtube icons"></i>
+              <i class="fa-brands fa-twitter icons"></i>
+              <i class="fa-brands fa-facebook icons"></i>
+            </div>
+          </div>
+          <!-- Middle Section -->
+          <div class="footer-links">
+            <div class="footer-text">About Us</div>
+            <div class="footer-text">Contact Us</div>
+            <div class="footer-text">Support</div>
+            <div class="footer-text">Careers</div>
+            <div class="footer-text">Media Centre</div>
+          </div>
+        </div>
+        <hr>
+        <!-- Copyright Section -->
+        <div class="copyright-container">
+          <div class="copy-text">Copyright 2024 Simon Says Pvt Ltd. All Rights Reserved</div>
+          <div class="copy-links">
+            <div class="copy-text-two">Notices</div>
+            <div class="copy-text-three">Privacy Policy</div>
+            <div class="copy-text-three">Terms of Service</div>
+            <div class="copy-text-four">India</div>
+          </div>
+        </div>
+      </footer>
+
+      <script>
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('nav ul li a');
+      
+        // Get the current page URL (without the domain)
+        const currentPage = window.location.pathname.split('/').pop(); // Get the file name from the path
+      
+        // Loop through all nav links
+        navLinks.forEach(link => {
+            // If the href matches the current page name, add the 'active' class
+            if (link.getAttribute('href').includes(currentPage)) {
+                link.classList.add('active');
+            } else {
+                // If not active, remove 'active' class from the other links
+                link.classList.remove('active');
+            }
+        });
+      </script>
+    <script src="app.js"></script>
+</body>
+</html>

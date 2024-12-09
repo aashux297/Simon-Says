@@ -1,0 +1,25 @@
+.contact-li{
+    font-weight: 400;
+    font-family: "Roboto Slab", serif;
+}
+.form-label{
+    font-size: 1.5rem;
+}
+.form-control {
+    background-color: transparent; /* Makes the background of input box transparent */
+    color: white; /* Ensures text is visible */
+    border: 1px solid #28cc28; /* Adds a green border for visibility */
+  }
+  
+  .form-control::placeholder {
+    color: #bdbdbd; /* Placeholder text color */
+    opacity: 0.8;   /* Slight transparency for placeholder */
+  }
+  
+  .form-control:focus {
+    box-shadow: none; /* Removes the default focus shadow */
+    border-color: #33ff33; /* Changes border color on focus */
+  }
+
+  
+  
