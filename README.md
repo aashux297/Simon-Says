@@ -16,7 +16,7 @@ Repeat the pattern by clicking on the corresponding buttons.
 Each round, the pattern gets longer and more challenging.
 If you press the wrong button, the game ends, and you can restart to try again!
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 HTML: For the structure of the game.
 CSS: For styling and animations.
 JavaScript: For game logic and interactivity.
